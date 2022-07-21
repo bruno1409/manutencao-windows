@@ -1,0 +1,107 @@
+@charset "UTF-8";
+
+* {
+    margin: 0px;
+    padding: 0px;
+}
+
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-image: url('wallpaper.jpg');
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+}
+
+header {
+    background-color: #004c707e;
+    color: #ffffff;
+    font-size: 2.5em;
+    text-align: center;
+    padding: 20px;
+    min-height: 65px;
+}
+
+main {
+    min-width: 300px;
+    max-width: 1000px;
+    margin: auto;
+    margin-bottom: 20px;
+    padding: 20px;
+    background-color: #ffffffcc;
+    box-shadow: 0px 0px 10px #00000066;
+}
+
+main h1 {
+    color: #ffffff;
+    font-size: 1.3em;
+    font-weight: normal;
+    background-image: linear-gradient(to right, #004d70, #70b9db);
+    text-indent: 10px;
+    padding: 2px;
+    margin: 10px 0px;
+}
+
+main h2 {
+    margin: 20px 0px;
+    font-weight: 500;
+}
+
+main hr {
+    margin-top: 10px;
+}
+
+main p {
+    margin-bottom: 15px;
+    margin-left: 2px;
+    text-align: justify;
+    line-height: 2em;
+}
+
+main li {
+    margin: 10px 0px 10px 20px;
+}
+
+main ul {
+    margin-left: 5px;
+    list-style-type: '\2714\00A0\00A0';
+}
+
+main strong {
+    color: #001e46;
+}
+
+main a {
+    text-decoration: none;
+    font-weight: bold;
+    color: #014c6e;
+}
+
+main a:hover {
+    text-decoration: underline;
+    color: #001e46;
+}
+
+main p.download {
+    font-size: 1.4em;
+    text-align: center;
+    margin-bottom: 15px;
+    border: 1px solid #32619e4d;
+}
+
+main table {
+    border-collapse: collapse;
+}
+
+main td {
+    border: 1px solid #5353534d;
+    padding: 0px 15px;
+}
+
+main tbody > tr:nth-child(odd) {
+    background-color: #f1f1f1e1;
+}
+
+main tbody > tr:nth-child(even) {
+    background-color: #dfdfdfdc;
+}

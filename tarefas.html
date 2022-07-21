@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Script para Manutenção do Windows</title>
+    <link rel="shortcut icon" href="/manutencao-windows/favicon.ico" type="image/x-icon">
+    <link rel="stylesheet" href="/manutencao-windows/site.css">
+</head>
+<body>
+    <header>
+        Script para Manutenção do Windows
+    </header>
+    <main>
+        <h1>Tarefas disponíveis</h1>
+        <table>
+            <tr id="101">
+                <td>
+                    <h2>101 - Reparar o sistema de arquivos</h2>
+                    <p>Verifica e corrige problemas encontrados no sistema de arquivos da unidade principal de armazenamento. Essa tarefa é realizada na próxima reinicialização do sistema e deve ser confirmada com <strong>s</strong> (sim). Após reiniciar o sistema, a tarefa será iniciada. <strong>Essa tarefa pode demorar <ins>várias horas</ins> e não deve ser interrompida.</strong></p>
+                </td>
+            </tr>
+            <tr id="102">
+                <td>
+                    <h2>102 - Reparar os arquivos do Windows</h2>
+                    <p>Verifica e corrige problemas encontrados nos arquivos do Windows. É recomendável executar essa tarefa novamente após o reparo dos arquivos da pasta WinSxS (103). <strong>Essa tarefa pode demorar alguns minutos.</strong></p>
+                </td>
+            </tr>
+            <tr id="103">
+                <td>
+                    <h2>103 - Reparar os arquivos da pasta WinSxS</h2>
+                    <p>Verifica e corrige problemas encontrados na pasta WinSxS. É necessário estar conectado na internet para que a tarefa seja realizada corretamente. Depois de executar essa tarefa, é recomendável executar a tarefa de reparação dos arquivos do Windows novamente (102). <strong>Essa tarefa pode demorar alguns minutos.</strong></p>
+                </td>
+            </tr>
+            <tr id="201">
+                <td>
+                    <h2>201 - Ver informações de energia</h2>
+                    <p>Exibe informações de energia. Útil para diagnosticar problemas com suspensão e hibernação do sistema.</p>
+                </td>
+            </tr>
+            <tr id="202">
+                <td>
+                    <h2>202 - Desativar hibernação (mantendo a inicialização rápida)</h2>
+                    <p>Desativa a hibernação, porém mantém funcionando a inicialização rápida. O tamanho do arquivo que será removido (hiberfil.sys) é aproximadamente a quantidade de memória RAM instalada no computador.</p>
+                </td>
+            </tr>
+            <tr id="203">
+                <td>
+                    <h2>203 - Desativar hibernação (completo)</h2>
+                    <p>Desativa completamente a hibernação, sem manter a inicialização rápida. O tamanho do arquivo que será removido (hiberfil.sys) é aproximadamente a quantidade de memória RAM instalada no computador.</p>
+                </td>
+            </tr>
+            <tr id="204">
+                <td>
+                    <h2>204 - Ativar hibernação</h2>
+                    <p>Ativa a hibernação caso o sistema seja compatível. O tamanho do arquivo que será criado ao ativar (hiberfil.sys) é aproximadamente a quantidade de memória RAM instalada no computador.</p>
+                </td>
+            </tr>
+            <tr id="301">
+                <td>
+                    <h2>301 - Gerar log do Windows Update no desktop</h2>
+                    <p>Cria um arquivo de log do Windows Update no desktop do usuário conectado. Útil para diagnosticar problemas no funcionamento do Windows Update. O arquivo criado pode ser aberto com o bloco de notas. <strong>Após executar essa tarefa, é recomendável fechar e iniciar o script novamente, pois ele ficará com a aparência um pouco diferente (foi executado usando PowerShell).</strong></p>
+                </td>
+            </tr>
+            <tr id="302">
+                <td>
+                    <h2>302 - Ver hotfixes instalados</h2>
+                    <p>Exibe os hotfixes instalados no sistema. <strong>Após executar essa tarefa, é recomendável fechar e iniciar o script novamente, pois ele ficará com a aparência um pouco diferente (foi executado usando PowerShell).</strong></p>
+                </td>
+            </tr>
+            <tr id="303">
+                <td>
+                    <h2>303 - Reparar o Windows Update (Básico)</h2>
+                    <p>Executa comandos básicos de reparação do Windows Update. Utilize essa tarefa caso o solucionador de problemas nativo do Windows não solucionar os problemas.</p>
+                </td>
+            </tr>
+            <tr id="304">
+                <td>
+                    <h2>304 - Reparar o Windows Update (Intermediário)</h2>
+                    <p>Executa comandos intermediários de reparação do Windows Update. Utilize somente se a tarefa de reparo básico não solucionar os problemas. <strong>Reinicie o computador após executar essa tarefa.</strong></p>
+                </td>
+            </tr>
+            <tr id="305">
+                <td>
+                    <h2>305 - Reparar o Windows Update (Avançado)</h2>
+                    <p>Executa comandos avançados de reparação do Windows Update. Utilize somente se a tarefa de reparo intermediário não solucionar os problemas. <strong>Reinicie o computador após executar essa tarefa.</strong></p>
+                </td>
+            </tr>
+        </table>
+    </main>
+</body>
+</html>

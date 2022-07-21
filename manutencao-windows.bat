@@ -1,6 +1,5 @@
 @echo off
-@chcp 65001
-title Script para Manutenção do Windows
+title Script para Manutencao do Windows
 
 net session >nul 2>&1
 if %errorlevel% equ 0 (
@@ -13,11 +12,11 @@ if %errorlevel% equ 0 (
 set opcao=0
 cls
 echo.
-echo --- Script para Manutenção do Windows ---
+echo --- Script para Manutencao do Windows ---
 echo.
-echo Para obter a lista de tarefas disponíveis, acesse https://bruno1409.github.io/manutencao-windows/
+echo Para obter a lista de tarefas que podem ser realizadas, acesse https://bruno1409.github.io/manutencao-windows/
 echo.
-set /p opcao=Digite o código da tarefa que deseja realizar: 
+set /p opcao=Digite o codigo da tarefa que deseja realizar: 
 echo.
 
 if %opcao% equ 101 goto 101
@@ -35,7 +34,7 @@ if %opcao% equ 305 goto 305
 if %opcao% geq 1 goto invalido
 
 :invalido
-echo [!] Tarefa inválida.
+echo [!] Tarefa inexistente.
 echo.
 pause
 goto inicio
@@ -71,7 +70,7 @@ goto inicio
 :201
 cls
 echo.
-echo --- Ver informações de energia ---
+echo --- Ver informacoes de energia ---
 echo.
 powercfg /a
 pause
@@ -80,7 +79,7 @@ goto inicio
 :202
 cls
 echo.
-echo --- Desativar hibernação (mantendo a inicialização rápida) ---
+echo --- Desativar hibernacao (mantendo a inicializacao rapida) ---
 echo.
 powercfg /h /type reduced
 echo.
@@ -90,7 +89,7 @@ goto inicio
 :203
 cls
 echo.
-echo --- Desativar hibernação (completo) ---
+echo --- Desativar hibernacao (completo) ---
 echo.
 powercfg /h off
 pause
@@ -99,7 +98,7 @@ goto inicio
 :204
 cls
 echo.
-echo --- Ativar hibernação ---
+echo --- Ativar hibernacao ---
 echo.
 powercfg /h on
 pause
@@ -126,7 +125,7 @@ goto inicio
 :303
 cls
 echo.
-echo --- Reparar o Windows Update (Básico) ---
+echo --- Reparar o Windows Update (Basico) ---
 echo.
 net stop wuauserv
 rd /s /q %systemroot%\SoftwareDistribution
@@ -137,7 +136,7 @@ goto inicio
 :304
 cls
 echo.
-echo --- Reparar o Windows Update (Intermediário) ---
+echo --- Reparar o Windows Update (Intermediario) ---
 echo.
 net stop bits
 net stop wuauserv
@@ -190,7 +189,7 @@ goto inicio
 :305
 cls
 echo.
-echo --- Reparar o Windows Update (Avançado) ---
+echo --- Reparar o Windows Update (Avancado) ---
 echo.
 net stop bits
 net stop wuauserv
@@ -248,8 +247,8 @@ goto inicio
 :admin
 cls
 echo.
-echo --- Script para Manutenção do Windows ---
+echo --- Script para Manutencao do Windows ---
 echo.
-echo Você precisa executar o script como administrador para que as tarefas funcionem corretamente.
+echo Execute o script como administrador para que as tarefas funcionem corretamente.
 echo.
 pause

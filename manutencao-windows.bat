@@ -31,6 +31,7 @@ if %opcao% equ 302 goto 302
 if %opcao% equ 303 goto 303
 if %opcao% equ 304 goto 304
 if %opcao% equ 305 goto 305
+if %opcao% equ 306 goto 306
 if %opcao% geq 1 goto invalido
 
 :invalido
@@ -125,6 +126,15 @@ goto inicio
 :303
 cls
 echo.
+echo --- Ver atualizacoes instaladas ---
+echo.
+start ms-settings:windowsupdate-history
+pause
+goto inicio
+
+:304
+cls
+echo.
 echo --- Reparar o Windows Update (Basico) ---
 echo.
 net stop wuauserv
@@ -133,7 +143,7 @@ net start wuauserv
 pause
 goto inicio
 
-:304
+:305
 cls
 echo.
 echo --- Reparar o Windows Update (Intermediario) ---
@@ -186,7 +196,7 @@ net start cryptsvc
 pause
 goto inicio
 
-:305
+:306
 cls
 echo.
 echo --- Reparar o Windows Update (Avancado) ---
